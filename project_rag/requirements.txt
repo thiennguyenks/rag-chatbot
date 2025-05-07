@@ -1,2 +1,3 @@
 llama-index==0.10.39
 Flask
+openai
