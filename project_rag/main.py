@@ -1,5 +1,5 @@
 from flask import Flask, request, jsonify
-from llama_index import VectorStoreIndex, SimpleDirectoryReader
+from llama_index.core import VectorStoreIndex, SimpleDirectoryReader
 
 app = Flask(__name__)
 
