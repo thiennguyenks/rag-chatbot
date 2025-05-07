@@ -1,5 +1,7 @@
 from flask import Flask, request, jsonify
 from llama_index.core import VectorStoreIndex, SimpleDirectoryReader
+import os  # đặt ở đầu file
+
 app = Flask(__name__)
 
 # Load và index tài liệu trong thư mục data
@@ -17,4 +19,5 @@ def ask():
     return jsonify({'response': str(response)})
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=7860)
+    port = int(os.environ.get("PORT", 8080))
+    app.run(host='0.0.0.0', port=port)
