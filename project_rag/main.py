@@ -1,6 +1,5 @@
 from flask import Flask, request, jsonify
 from llama_index.core import VectorStoreIndex, SimpleDirectoryReader
-
 app = Flask(__name__)
 
 # Load và index tài liệu trong thư mục data
