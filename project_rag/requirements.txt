@@ -1,2 +1,4 @@
 flask
-llama-index
+llama-index==0.10.39
+docx2txt
+openai
